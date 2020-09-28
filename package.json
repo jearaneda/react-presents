@@ -24,7 +24,8 @@
     "prepublish": "npm run build",
     "start": "cross-env NODE_ENV=development webpack-dev-server --hot --inline --config webpack.config.dev.js",
     "watch": "watch 'clear && npm run test -s' source",
-    "watch:nolint": "watch 'clear && npm run test:unit' source"
+    "watch:nolint": "watch 'clear && npm run test:unit' source",
+    "postinstall": "cd ./node_modules/my-forked-project && npm install && npm run build"
   },
   "author": "Brian Vaughn <brian.david.vaughn@gmail.com>",
   "license": "MIT",
