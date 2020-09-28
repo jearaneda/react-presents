@@ -243,8 +243,6 @@ class PresentationInner extends Component {
 
   _onKeyDown(event) {
     // Ignore all keyboard events.
-    if (true) {
-      return;
-    }
+    return;
   }
 }
